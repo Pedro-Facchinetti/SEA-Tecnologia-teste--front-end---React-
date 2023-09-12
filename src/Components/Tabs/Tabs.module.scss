@@ -1,0 +1,64 @@
+@use "../../global.scss" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(255, 255, 255);
+
+$bg_color_active: rgb(17, 200, 180); // Para a tab ativa
+$bg_color_inactive: rgb(255, 220, 220); // Para a tab não ativa
+
+$border_radius_type_0: 0px 10px 10px 0px;
+$border_radius_type_1: 10px 0px 0px 10px;
+
+$font_type_0: 400 21px/1.38 "Open Sans", Helvetica, Arial, serif;
+
+.tabQuery {
+    align-items: flex-end; // Alinhar os itens ao topo para que a tab selecionada "salte"
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5vh;
+}
+
+.adminTab,
+.defaultTab {
+    display: grid;
+    position: relative;
+    flex: 0 0 197px;
+    height: 4.88vh; // Altura padrão
+    width: 13.68vw;
+}
+
+.adminTab__Titulo,
+.defaultTab__Titulo {
+    color: $color_type_0;
+    flex-grow: 1;
+    font: $font_type_0;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adminTab {
+    background-color: $bg_color_inactive;
+    border-radius: $border_radius_type_1;
+}
+
+.defaultTab {
+    background-color: $bg_color_inactive;
+    border-radius: $border_radius_type_0;
+}
+
+.adminTab.activeTab {
+    background-color: $bg_color_active;
+    height: 5.76vh; // Aumentar a altura para a tab "saltada"
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Adiciona sombra para dar efeito "saltado"
+}
+
+.defaultTab.activeTab {
+    background-color: $bg_color_active;
+    height: 5.76vh; // Aumentar a altura para a tab "saltada"
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Adiciona sombra para dar efeito "saltado"
+}

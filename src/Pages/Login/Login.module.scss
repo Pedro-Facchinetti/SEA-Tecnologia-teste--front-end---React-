@@ -1,0 +1,35 @@
+.root {
+    display: grid;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .form {
+    background-color: #13232F;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 44.65vw;
+    height: 61.82vh;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    align-items: center;
+  }
+  
+  .form__content__InputContainer{
+    width: 19.51vw;
+    height: 8.30vh;
+    gap: 3vh;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+  }
+  

@@ -1,0 +1,25 @@
+{
+  "short_name": "SEA Tecnologia",
+  "name": "Teste Back-end - SEA Tecnologia",
+  "icons": [
+    {
+      "src": "logoSEA.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "logoSEA.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logoSEA.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

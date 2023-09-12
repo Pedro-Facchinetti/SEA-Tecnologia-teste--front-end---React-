@@ -1,0 +1,47 @@
+@use "../../../global.scss" as *;
+
+
+.cadastro__form__content__rodape {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 0px 0px 1px;
+    position: relative;
+
+  }
+  
+  .cadastro__form__content__rodape__info {
+    color: rgb(255, 255, 255);
+    flex: 0 0 356px;
+    font: italic 300 20px/1.35 "Open Sans", Helvetica, Arial, serif;
+    letter-spacing: 0px;
+    margin: 18px 0px 19px;
+  }
+  
+  .cadastro__form__content__rodape__spacer {
+    flex: 0 1 269px;
+  }
+  
+  .cadastro__form__content__rodape__Botao {
+    background-color: rgb(17, 200, 180);
+    border-radius: 30px 30px 30px 30px;
+    display: grid;
+    flex: 0 0 394px;
+    position: relative;
+  }
+  
+  .subtitle2 {
+    color: rgb(0, 0, 0);
+    flex-grow: 1;
+    font: 400 21px/1.38 "Open Sans", Helvetica, Arial, serif;
+    letter-spacing: 0px;
+    margin: 18px auto 17px;
+    width: 42.13%;
+  }
+
+  .rodapeButton {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  

@@ -1,0 +1,112 @@
+@use "../../../global.scss" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(255, 255, 255);
+
+$bg_color_type_0: rgb(17, 200, 180);
+$bg_color_type_1: rgb(19, 35, 47);
+$bg_color_type_2: rgb(255, 220, 220);
+
+$border_radius_type_0: 0px 10px 10px 0px;
+$border_radius_type_1: 10px 0px 0px 10px;
+$border_radius_type_2: 10px 10px 10px 10px;
+$border_radius_type_3: 20px 20px 20px 20px;
+$border_radius_type_4: 30px 30px 30px 30px;
+
+$font_type_0: 400 21px/1.38 "Open Sans", Helvetica, Arial, serif;
+
+.inputFieldContainer,
+.passwordFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0px;
+  position: relative;
+}
+
+.inputField,
+.passwordField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0px;
+  position: relative;
+}
+
+.subtitle_box {
+  text-align: center;
+}
+
+.subtitle {
+  color: $color_type_1;
+  font: $font_type_0;
+  letter-spacing: 0px;
+}
+
+.subtitle_span0,
+.subtitle_span1 {
+  color: $color_type_1;
+  font: $font_type_0;
+}
+
+.rect {
+  border-radius: $border_radius_type_2;
+  outline: 1px solid rgb(5, 119, 101);
+  outline-offset: -1px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  width: 19.51vw;
+  height: 4.88vh;
+}
+
+.info {
+  color: $color_type_1;  // Define a cor como branco
+  font: $font_type_0;
+  letter-spacing: 0px;
+}
+
+.info, .info1, .info2 {
+  font-size: 12px; 
+  position: absolute; 
+  bottom: -25px; 
+  white-space: nowrap;
+    color: white;
+}
+
+.info1 {
+  left: 0; 
+  margin-right: 10px; 
+}
+
+.info2 {
+  right: 0;
+  margin-left: 10px;
+}
+
+.inputField, .passwordField {
+  position: relative;
+}
+
+.subtitle_box--leftAligned {
+  text-align: left;
+}
+
+.dropdown {
+  border-radius: $border_radius_type_2;
+  outline: 1px solid rgb(5, 119, 101);
+  outline-offset: -1px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  appearance: none; // Remove estilos padrões em alguns navegadores
+  -webkit-appearance: none; // Para navegadores baseados em Webkit
+  -moz-appearance: none; // Para Firefox
+
+  &:hover {
+    background-color: transparent;
+    background-image: linear-gradient(transparent, transparent); // Simula um fundo transparente
+  }
+
+  option {
+    color: black; // Define a cor do texto para preto nas opções não selecionadas
+  }
+}

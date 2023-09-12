@@ -1,0 +1,33 @@
+@use "../../global.scss" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(255, 255, 255);
+
+$bg_color_type_0: rgb(17, 200, 180);
+$bg_color_type_1: rgb(19, 35, 47);
+$bg_color_type_2: rgb(255, 220, 220);
+
+$border_radius_type_0: 0px 10px 10px 0px;
+$border_radius_type_1: 10px 0px 0px 10px;
+$border_radius_type_2: 10px 10px 10px 10px;
+$border_radius_type_3: 20px 20px 20px 20px;
+$border_radius_type_4: 30px 30px 30px 30px;
+
+$font_type_0: 400 21px/1.38 "Open Sans", Helvetica, Arial, serif;
+
+.acessarButton {
+    background-color: $bg_color_type_0;
+    border-radius: $border_radius_type_4;
+    display: grid;
+    position: absolute;
+    width: 27.36vw;
+    height: 6.25vh;
+    align-self: center;
+    bottom: 5vh;
+  }
+  
+  .subtitle {
+    color: $color_type_0;
+    flex-grow: 1;
+    font: $font_type_0;
+  }  

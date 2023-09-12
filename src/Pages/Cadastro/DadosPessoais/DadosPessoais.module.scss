@@ -1,0 +1,26 @@
+@use "../../../global.scss" as *;
+
+.dadosPessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    margin: 72px auto 0px 0px;
+    position: relative;
+    width: 60.2%;
+  }
+  
+  .titulo {
+    color: rgb(255, 255, 255);
+    font: 400 30px/1.36 "Open Sans", Helvetica, Arial, serif;
+    letter-spacing: 0px;
+  }
+  
+  .dadosPessoais__InputContainer {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  .dadosPessoais__InputContainer__spacer {
+    flex: 0 1 44px;
+  }  
